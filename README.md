@@ -2,6 +2,8 @@
 
 Personal portfolio of Nikola Ivanović, junior frontend developer.
 
+Live site: https://nikola-ivanovic.vercel.app
+
 ## Tech
 
 - HTML, CSS, JavaScript
