@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nikola Ivanović | Junior Frontend Developer</title>
+  <meta name="description" content="Portfolio of Nikola Ivanović, junior frontend developer focused on React, JavaScript and responsive web apps.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="#home" class="logo" aria-label="Nikola Ivanović, home">
+      <svg viewBox="0 0 96 56" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path class="br" d="M16 12 L4 28 L16 44" stroke-width="4"/>
+        <path class="n" d="M26 44 L26 12 L50 44 L50 12" stroke-width="5.5"/>
+        <path class="n" d="M59 46 L68 18" stroke-width="5.5"/>
+        <circle class="dot" cx="72" cy="8.5" r="3.4"/>
+        <path class="br" d="M80 12 L92 28 L80 44" stroke-width="4"/>
+      </svg>
+    </a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="menu" id="menu" aria-label="Main menu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="backdrop" id="backdrop"></div>
+
+  <main>
+    <section id="home" class="hero">
+      <p class="eyebrow">Hello, I'm</p>
+      <h1>Nikola <span>Ivanović</span></h1>
+      <p class="roles">Frontend Developer <i>/</i> Coder <i>/</i> Debugger</p>
+      <p class="lead">I build responsive web apps with React and JavaScript.</p>
+      <a class="btn" href="#projects">Projects <span aria-hidden="true">→</span></a>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <div class="content">
+        <p>I am a graduate of ITAcademy based in Novi Sad, Serbia. During the course I built several web apps in React, Vue and Angular.</p>
+        <p>I am looking for my first junior frontend role where I can keep growing and work with a team.</p>
+        <ul class="facts">
+          <li><small>Location</small>Novi Sad, Serbia</li>
+          <li><small>Education</small>ITAcademy</li>
+          <li><small>Languages</small>Serbian, English, German (B1)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="content">
+        <div class="skills">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>TypeScript</span>
+          <span>React</span><span>Vue</span><span>Angular</span><span>Vite</span>
+          <span>React Router</span><span>REST APIs</span><span>Supabase</span>
+          <span>Git</span><span>GitHub</span><span>VS Code</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="content grid">
+        <article class="card">
+          <div class="shot"><img src="images/fashion.png" alt="Screenshot of the IT Fashion Store home page" loading="lazy" onerror="this.parentNode.remove()"></div>
+          <span class="num">01</span>
+          <h3>IT Fashion Store</h3>
+          <p>E-commerce web app with product list, category filters, product details, cart, checkout, login and registration. Cart state is shared with Context API and saved in localStorage.</p>
+          <p class="tags">React · Vite · React Router · Context API</p>
+          <div class="links"><a href="https://github.com/nikolaivanovic1926/it-fashion-store" target="_blank" rel="noopener">Code</a></div>
+        </article>
+
+        <article class="card">
+          <div class="shot"><img src="images/todo.png" alt="Screenshot of the Vue ToDo App" loading="lazy" onerror="this.parentNode.remove()"></div>
+          <span class="num">02</span>
+          <h3>Vue ToDo App</h3>
+          <p>Task management app where you can add, complete and delete tasks, built with Vue components.</p>
+          <p class="tags">Vue 3 · Vite · JavaScript</p>
+          <div class="links"><a href="https://github.com/nikolaivanovic1926/vue-todo-app" target="_blank" rel="noopener">Code</a></div>
+        </article>
+
+        <article class="card">
+          <div class="shot"><img src="images/salon.png" alt="Screenshot of the Angular Salon Booking app" loading="lazy" onerror="this.parentNode.remove()"></div>
+          <span class="num">03</span>
+          <h3>Angular Salon Booking</h3>
+          <p>Salon appointment booking app built with Angular components and TypeScript.</p>
+          <p class="tags">Angular · TypeScript · CSS</p>
+          <div class="links"><a href="https://github.com/nikolaivanovic1926/angular-salon-booking" target="_blank" rel="noopener">Code</a></div>
+        </article>
+
+        <article class="card">
+          <div class="shot"><img src="images/library.png" alt="Screenshot of the City Library Loans app" loading="lazy" onerror="this.parentNode.remove()"></div>
+          <span class="num">04</span>
+          <h3>City Library Loans</h3>
+          <p>Book loan tracking app with user login, built with the help of AI tools (Lovable) and a Supabase backend.</p>
+          <p class="tags">React · TypeScript · Supabase · Lovable</p>
+          <div class="links">
+            <a href="https://citylibraryloans.lovable.app" target="_blank" rel="noopener">Live</a>
+            <a href="https://github.com/nikolaivanovic1926/city-library-loans" target="_blank" rel="noopener">Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Contact</h2>
+      <div class="content">
+        <p>Open to junior frontend opportunities. Feel free to reach out.</p>
+        <div class="actions">
+          <a class="btn" href="https://www.linkedin.com/in/nikola-ivanovic-801254446" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/nikolaivanovic1926" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="mailto:ivanovicnikola1926@gmail.com">Email</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>© 2026 Nikola Ivanović</p></footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
